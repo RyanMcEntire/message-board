@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    </script>
+  </head>
+  <body>
+    <a href="new"><button type="button" onmousedown="">New Message</button></a>
+    <h2>Messages </h2>
+    <% if (messages) { %>   
+      <div class="message-area">
+      <% messages.forEach( function(message) { %>
+        <div class="message-container">
+          <div>
+            <p>User: <%= message.user %></p>
+            <p>Text: <%= message.text %></p>
+          </div>
+          <div class="separator"></div>
+          <div>
+            <p class="time-stamp">Date posted:<%= message.added %></p>
+          </div> 
+        </div> 
+      <% }) %>   
+      </div>     
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.message-area {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.message-container > div > p {
+  display: flex;
+  padding: 0rem 2rem;
+}
+
+.message-content {
+  border-bottom: 2px solid black;
+  border-radius: 1rem;
+  padding: 0rem 2rem;
+}
+
+.time-stamp {
+  padding: 2rem 2rem;
+  color: dimgray;
+}
+
+.separator {
+  border: 1px solid rgb(202, 202, 202);
+}
